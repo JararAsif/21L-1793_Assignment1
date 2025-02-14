@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Assignment1</string>
+    <string name="start_text">MCQS Quiz App</string>
+    <string name="name">Enter Your Name</string>
+    <string name="startQuiz">Start Quiz</string>
+    <string name="score">Share Score</string>
+    <string name="scoreboard">ScoreBoard</string>
+
+
+
+</resources>

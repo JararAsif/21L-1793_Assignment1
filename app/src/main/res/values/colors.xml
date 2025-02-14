@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="creamy">#EFF2ED</color>
+    <color name="offwhite">#F7F7F7</color>
+    <color name="green">#0D2E2E</color>
+    <color name="lightgreen">#245953</color>
+    <color name="lightgreen1">#659287</color>
+    <color name="default_radio_button_color">#FFFFFF</color>
+
+
+</resources>
