@@ -2,7 +2,6 @@ package com.example.assignment1;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
@@ -38,12 +37,18 @@ public class MainActivity extends AppCompatActivity {
             {
                 Toast.makeText(this, "Please enter your name", Toast.LENGTH_SHORT).show();
             }
+            else if(!isValidName(name))
+            {
+                Toast.makeText(this, "Name should only contain letters", Toast.LENGTH_SHORT).show();
+            }
+
             else//moving from main activity to Quiz display class with the user name
             {
                 Intent intent=new Intent(this,QuizInterface.class);
                 intent.putExtra("USER_NAME", name);
-                startActivity(intent);
                 overridePendingTransition(R.anim.slide_right,R.anim.slide_left);
+                startActivity(intent);
+
             }
         }));
     }
@@ -54,4 +59,8 @@ public class MainActivity extends AppCompatActivity {
         AnimationUtils.loadAnimation(this,R.anim.slide_right);
         AnimationUtils.loadAnimation(this,R.anim.slide_left);
     }
+    public boolean isValidName(String name) {
+        return name.matches("[a-zA-Z ]+"); // Allows spaces between names
+    }
+
 }
